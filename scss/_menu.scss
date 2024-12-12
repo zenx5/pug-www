@@ -89,12 +89,24 @@ $transition: 0.3s ease-in-out;
     }
   }
 }
-
+.nav-link.sponsors {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 .sponsor {
-  margin-left: 16px;
-  margin-top: 16px;
+  width: 64px;
   display: block;
   color: hsl(0, 0%, 51%);
+}
+.sponsor:nth-child(1) {
+  width: 100%;
+  padding-left: 16px;
+}
+.sponsor img {
+    position: relative;
+    left: -64px;
 }
 .advert {
   margin-left: 16px;
